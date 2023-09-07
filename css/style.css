@@ -1,0 +1,7 @@
+body {
+  background-color: whitesmoke;
+}
+.header,
+footer {
+  background-image: linear-gradient(180deg, black, gray);
+}
