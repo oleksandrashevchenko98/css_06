@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=PT+Serif&family=Phudu&family=Raleway&family=Roboto+Condensed&display=swap");
+
 body {
   background-color: whitesmoke;
 }
 .header,
 footer,
 .header__dropdown-button {
-  color: white;
+  color: whitesmoke;
 }
 .header,
 footer {
@@ -15,10 +17,32 @@ footer {
 .wrapper {
   width: 100%;
 }
-.header {
-  font-size: 1.5rem;
+.header__dropdown-button,
+.header,
+.section h4 {
+  font-size: 1.2rem;
+}
+.header__dropdown-button,
+.section h1,
+.section h4 {
+  font-weight: 700;
+}
+
+.section h1,
+.section__image {
   text-align: center;
-  line-height: 200%;
+}
+
+.header__dropdown-button,
+.header__dropdown-content a,
+.header__item {
+  font-family: "Roboto Condensed";
+}
+.section h1,
+.section h4 {
+  font-family: "Dancing Script";
+}
+.header {
   position: fixed;
   display: flex;
 }
@@ -26,6 +50,7 @@ footer {
   position: relative;
   display: inline-block;
 }
+
 .header__dropdown-button {
   background-color: #4caf50;
   padding: 50%;
@@ -35,31 +60,61 @@ footer {
 .header__dropdown-content {
   display: none;
   position: absolute;
-  min-width: 160px;
+  min-width: 350px; /* Не працює, якщо задаю у % */
   z-index: 1;
 }
+.header__dropdown-button:hover {
+  background-color: #407a42;
+  transition: 1s;
+}
+
 .header__dropdown:hover .header__dropdown-content {
   display: block;
   background-color: #f1f1f1;
+  border: 1px solid black;
 }
 .header__dropdown-content a {
+  padding-left: 5%;
   text-decoration: none;
   display: block;
+  color: black;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  line-height: 200%;
+}
+.header__item {
+  padding-left: 75%;
+  line-height: 300%;
+  font-style: italic;
+}
+.header__image {
+  padding-left: 1%;
 }
 .wrapper {
   position: static bottom;
 }
 .section {
-  padding: 100px 5% 50px 5%;
+  padding: 75px 5% 50px 5%;
+}
+.section__article {
+  width: 70%;
 }
 .section h1 {
   font-size: 5rem;
-  font-weight: 700;
   margin: 0 auto;
-  text-align: center;
 }
-.section_image {
+.section--flex {
+  display: flex;
+}
+.section ul {
+  width: 60%;
+}
+.section__image {
   width: 75%;
   margin: 0 auto;
-  text-align: center;
+}
+.section__item {
+  margin: 0 0 5% 5%;
+  padding: 5%;
+  border: 1px dotted black;
 }
