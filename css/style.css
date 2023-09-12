@@ -2,6 +2,7 @@
 /* 1 */
 body {
   background-color: whitesmoke;
+  font-family: "Raleway";
 }
 /* 10 */
 .header,
@@ -18,7 +19,8 @@ body {
 /* 10 */
 .header,
 .footer,
-.wrapper {
+.wrapper,
+.section__form__button {
   width: 100%;
 }
 /* 10 */
@@ -30,13 +32,15 @@ body {
 /* 11 */
 .header__dropdown-button,
 .section h1,
-.section h4 {
+.section h4,
+.section__article--mod {
   font-weight: 700;
 }
 /* 11 */
 .section h1,
 .section__image,
-.footer {
+.footer,
+.section__form__heading {
   text-align: center;
 }
 /* 11 */
@@ -55,8 +59,14 @@ body {
 /* 31 */
 .header__dropdown:hover .header__dropdown-content,
 .header__dropdown-content a,
-.section form {
+.section form,
+.section__form__button {
   border: 1px solid black;
+}
+/* 10 */
+.header__dropdown-button,
+.section__form__button {
+  background-color: #4caf50;
 }
 /* 10 */
 .header {
@@ -72,7 +82,6 @@ body {
 .header__dropdown-button {
   padding: 50%;
   border: none;
-  background-color: #4caf50;
   cursor: pointer;
 }
 /* 10 */
@@ -94,8 +103,14 @@ body {
 }
 /* 10 */
 .section__item,
-.section__item--mod {
+.section__item--mod,
+.section__article p {
   text-indent: 5%;
+}
+/* 10 */
+.section__article--spec,
+.header__item {
+  font-style: italic;
 }
 /* 11 */
 .header__dropdown-content a {
@@ -109,7 +124,6 @@ body {
 /* 10 */
 .header__item {
   padding-left: 75%;
-  font-style: italic;
   line-height: 300%;
 }
 /* 10 */
@@ -153,7 +167,6 @@ body {
 }
 /* 11 */
 .section form {
-  width: 100%;
   margin-top: 15%;
   font-size: 1.5rem;
   background-image: linear-gradient(180deg, #4caf50, #407a42);
@@ -174,6 +187,11 @@ body {
 .section__item--mod {
   width: 70%;
 }
+/* 10 */
+.section__form__button {
+  font-family: "Phudu";
+}
+/* 10 */
 .footer {
   position: fixed;
   bottom: 0;
